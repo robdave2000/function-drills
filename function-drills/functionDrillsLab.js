@@ -305,7 +305,23 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+function isAscending(arrays)
+{
+  for (let i = 0; i < arrays.length - 1; i++)
+  {
+    if (arrays[i] < arrays[i + 1])
+    {
+    }
+    else
+    {
+      return false;
+    }
+  }
 
+  return true;
+}
+let arrayIsAscending = isAscending(sampleArray);
+console.log(arrayIsAscending);
 
 ////////////////// PROBLEM 16 ////////////////////
 
