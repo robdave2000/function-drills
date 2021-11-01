@@ -275,7 +275,6 @@ function frogPurchaser(gold)
 {
   frogCost = 3;
   purchaseAmount = (gold / 3);
-  purchaseAmount = parseInt(purchaseAmount);
 
   return purchaseAmount;
 }
@@ -288,7 +287,16 @@ console.log(totalFrogs);
 */
 
 //CODE HERE
+function frogPurchaser2(gold)
+{
+  frogCost = 3;
+  purchaseAmount = (gold / 3);
+  purchaseAmount = parseInt(purchaseAmount);
 
+  return purchaseAmount;
+}
+let totalFrogs2 = frogPurchaser2(25);
+console.log(totalFrogs2);
 
 ////////////////// PROBLEM 15 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
