@@ -72,7 +72,23 @@ console.log(sum);
 */
 
 //CODE HERE
-
+function nameCheck(userName)
+{
+  if (userName === "Steven")
+  {
+    return "What is up Steven?";
+  }
+  else if (userName === "Bryan")
+  {
+    return "Hey Bryan!";
+  }
+  else
+  {
+    return `Cool name ${userName}`
+  }
+}
+nameGretting = nameCheck("Robert");
+console.log(nameGretting);
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
