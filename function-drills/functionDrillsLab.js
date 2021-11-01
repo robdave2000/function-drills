@@ -52,7 +52,15 @@ nameGreet(10);
 */
 
 //CODE HERE
+function add(value1, value2)
+{
+  value1 = parseFloat(value1);
+  value2 = parseFloat(value2);
 
+  return value1 + value2;
+}
+sum = add(12, "56.7");
+console.log(sum);
 
 ////////////////// PROBLEM 5 ////////////////////
 /*
