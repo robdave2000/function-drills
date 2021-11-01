@@ -59,7 +59,7 @@ function add(value1, value2)
 
   return value1 + value2;
 }
-sum = add(12, "56.7");
+let sum = add(12, "56.7");
 console.log(sum);
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -87,7 +87,7 @@ function nameCheck(userName)
     return `Cool name ${userName}`
   }
 }
-nameGretting = nameCheck("Robert");
+let nameGretting = nameCheck("Robert");
 console.log(nameGretting);
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -101,7 +101,27 @@ console.log(nameGretting);
 */
 
 //CODE HERE
-
+function faveColorFinder(color)
+{
+  if (color === "red")
+  {
+    return "red is a great color";
+  }
+  else if (color === "green")
+  {
+    return "green is a solid favorite color";
+  }
+  else if (color === "black")
+  {
+    return "so trendy";
+  }
+  else
+  {
+    return "you need to evaluate your favorite color choice";
+  }
+}
+let colorRating = faveColorFinder("red");
+console.log(colorRating);
 
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
