@@ -228,7 +228,11 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
+function upperCase(strings)
+{
+  console.log(strings.toUpperCase());
+}
+upperCase(sampleString);
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
@@ -241,6 +245,25 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 
+//CODE HERE
+let sampleEmail = "      robdave22@yahoo.com     "
+
+function emailCheck(email)
+{
+  email = email.toString().trim();
+
+  for (let i = 0; i < email.length; i++)
+  {
+    if (email.charAt(i) === "@")
+    {
+      return "email verified";
+    }
+  }
+  return "must provide a valid email addres";
+}
+let checkEmail = emailCheck(sampleEmail);
+console.log(checkEmail);
+
 ////////////////// PROBLEM 13 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
@@ -248,7 +271,16 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+function frogPurchaser(gold)
+{
+  frogCost = 3;
+  purchaseAmount = (gold / 3);
+  purchaseAmount = parseInt(purchaseAmount);
 
+  return purchaseAmount;
+}
+let totalFrogs = frogPurchaser(25);
+console.log(totalFrogs);
 
 ////////////////// PROBLEM 14 ////////////////////
 /*
