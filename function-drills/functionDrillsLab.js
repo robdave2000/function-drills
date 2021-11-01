@@ -37,7 +37,11 @@ printName("Cameron");
 */
 
 //CODE HERE
-
+function nameGreet(personName)
+{
+  console.log(`Hello, ` + personName.toString())
+}
+nameGreet(10);
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
