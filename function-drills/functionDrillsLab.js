@@ -176,7 +176,25 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+function bigOrSmall(arr)
+{
+  let answers = [];
 
+  for (let i = 0; i < bigOrSmallArray.length; i++)
+  {
+    if (bigOrSmallArray[i] > 100)
+    {
+      answers.push("big");
+    }
+    else if (bigOrSmallArray[i] <= 100)
+    {
+      answers.push("small");
+    }
+  }
+  return answers;
+}
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
+console.log(arrayEvaluator);
 
 ////////////////// PROBLEM 10 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
